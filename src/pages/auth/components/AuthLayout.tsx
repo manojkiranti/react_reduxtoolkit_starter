@@ -26,7 +26,7 @@ const AuthLayout: FC<AuthLayoutProps> = ({ children, banner }) => {
                 padding: '2rem',
               }}
             >
-              <img src={Logo} alt="Logo" style={{ height: '40px' }} />
+              <img src={Logo} alt="Logo" style={{ height: '60px' }} />
             </div>
             <div className={styles.formContainerStyles}>{children}</div>
           </Col>

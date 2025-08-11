@@ -2,7 +2,7 @@ import { useTheme } from '@/contexts/themeContext';
 import styles from './Sidebar.module.scss';
 import MenuList from '../MenuList';
 
-import Logo from '@/assets/images/logo_2.png';
+import Logo from '@/assets/images/logo.png';
 import { Button, Grid } from 'antd';
 
 import { Scrollbars } from 'rc-scrollbars';
