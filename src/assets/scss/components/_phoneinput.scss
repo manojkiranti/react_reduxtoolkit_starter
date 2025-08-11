@@ -1,0 +1,19 @@
+.custom-phone-input {
+  .react-international-phone-country-selector-button {
+    padding: 10px;
+    .react-international-phone-country-selector-button__button-content {
+      //   background-color: #f2f2f2;
+      //   border-radius: 20px;
+      //   padding: 5px;
+      .react-international-phone-flag-emoji {
+        height: 20px;
+      }
+    }
+  }
+  .react-international-phone-input {
+    border-radius: 0px 8px 8px 0 !important;
+    font-size: 1rem !important;
+    color: #475569 !important;
+    flex-grow: 1;
+  }
+}

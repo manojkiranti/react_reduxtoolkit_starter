@@ -1,0 +1,14 @@
+branch_name=$(git rev-parse --abbrev-ref HEAD)
+
+if [ "$branch_name" = "main" ]; then
+  echo "Running lint before push..."
+  npm run lint && npm run type-check
+
+  if [ $? -ne 0 ]; then
+    echo "Push rejected due to linting or test errors."
+    exit 1
+  else
+    echo "Push approved."
+  fi
+fi
+

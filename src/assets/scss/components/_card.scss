@@ -1,0 +1,26 @@
+.card-active{
+    background-color: #F8FAFC;
+    border-color: $primary!important;
+}
+.query-col{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 5px;
+  }
+  .query-card{
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-flex;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    
+    margin-bottom: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+      background: #f0eeee;
+    }
+  }

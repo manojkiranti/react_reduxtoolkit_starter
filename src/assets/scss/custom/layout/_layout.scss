@@ -1,0 +1,95 @@
+.main-layout {
+  width: 100%;
+}
+
+.stepper-form-footer {
+  position: fixed;
+  left: $sidebarWidth;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+  background: $white;
+  &.sidebarContainerCollapse {
+    left: 90px;
+  }
+}
+
+.assistant-sidebar {
+  height: calc(100% - 56px);
+  width: 450px;
+  background: white;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.3s ease;
+  border-left: 1px solid gainsboro;
+  position: fixed;
+  right: 0;
+  top: 56px;
+  z-index: 9;
+}
+.mainBody {
+  width: 100%;
+  &.mainBodyCollapse {
+    width: calc(100% - 450px);
+  }
+}
+
+.open-assistant {
+  .assistant-sidebar {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+/* Style for an active menu item inside a submenu */
+.submenu-with-border  .ant-menu-sub {
+  border-left: 3px solid #e0e0e0; /* Adjust color and width as needed */
+  position: relative; /* Ensure the border container is positioned for the absolute indicator */
+}
+
+.submenu-with-border .sub-menu-border{
+  position: absolute;
+  left: 30.5px;
+  height: calc(100% - 30px);
+  width: 1px;
+  background: green;
+  top: 15px;
+}
+
+.main-header{
+  background-color: $white;
+}
+.sidebar-container{
+   border-right: 1px solid $borderColor;
+}
+
+.dark-mode{
+  .main-header{
+    background-color: #232323;
+    border-bottom-color: #000;
+  }
+  .sidebar-container{
+     border-right-color: #000;
+     background-color: #000;
+  }
+  .main-layout{
+    background-color: #1e1e1e;
+  }
+}
+
+.content-divider{
+  position: relative;
+  &::after{
+    content: "";
+    left: 50%;
+    height: 100%;
+    width: 1px;
+    margin-left: -0.5px;
+    background-color: $borderColor;
+    top: 0;
+    position: absolute;
+  }
+}
